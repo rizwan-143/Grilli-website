@@ -460,6 +460,10 @@ animation-fill-mode: both;
     .offcanvas{
         background-color: black;
     }
+    .offcanvas-body{
+        background-color: #161718;
+        color: white;
+    }
     .banner-slide div{
         width: 100px;
         height: 100px;
@@ -613,6 +617,10 @@ animation-fill-mode: both;
         background-repeat: no-repeat;
         height: 140vh;
     }
+    .offcanvas-body{
+        background-color: #161718;
+        color: white;
+    }
 
     .selection{
         padding: 10px 0;
@@ -639,7 +647,7 @@ animation-fill-mode: both;
         margin-top: 40px;
     }
 
-    reservation{
+    .reservation{
         height: auto;
         padding-top: 30px;
         padding-bottom: 30px;
