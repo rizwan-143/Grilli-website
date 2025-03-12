@@ -1,0 +1,719 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+
+}
+
+header{
+    background-image: url("hero-slider-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 200px;
+    animation-name: banner-background-image ;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition: 5s;
+}
+@keyframes banner-background-image {
+
+    20%{
+        background-image: url("hero-slider-3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    50%{
+        background-image: url("hero-slider-2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    100%{
+        background-image: url("hero-slider-1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+.offcanvas-body{
+    margin-left: auto;
+}
+
+.banner-slide div{
+    width: 100px;
+    height: 100px;
+    background-color: #E4C590;
+    margin-right: 100px;
+
+}
+
+.banner-slide .back{
+    background-color: transparent;
+    border: 1px solid #E4C590;
+animation-name: back-frame;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+animation-direction: reverse;
+animation-fill-mode: forwards;
+}
+
+.banner-slide div p {
+    color: black;
+}
+@keyframes back-frame {
+    
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+
+.flavour {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.story{
+    background-color: #161718;
+    height: auto;
+    padding: 100px 50px;
+
+}
+
+.special-dish{
+    background-color: black;
+    padding: 100px 50px;
+    height: auto;
+}
+
+.special-dish .special-dish-animated-pic{
+animation-name: special-dish-animated-pic;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-delay: 0s;
+animation-fill-mode: both;
+}
+
+@keyframes special-dish-animated-pic  {
+    from{
+        transform: translateY(30px);
+    }
+}
+
+.selection{
+    padding: 50px 20px;
+    height: auto;
+    background-color: #161718;
+}
+
+.selection .menu-pic img{
+    width: 70px;
+    height: 70px;
+}
+
+.selection .price-section p{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.selection .selection-heading-section h1{
+    letter-spacing: 3px;
+}
+
+.selection .span span{
+    width: 50px;
+    height: 1px;
+    margin-top: 2px;
+}
+
+.selection .para p{
+    font-size: 10px;
+    letter-spacing: 0.3px;
+}
+
+.selection ul li{
+    margin-top: 50px;
+}
+
+.reservation{
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.reservation .inputs input{
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+}
+.reservation .inputs input::placeholder{
+    color: white;
+
+}
+
+.reservation .details-inputs select{
+    width: 30%;
+    height: 40px;
+    background-color: #161718;
+}
+.reservation .details-inputs select option{
+    background-color: #161718;
+    color: white;
+}
+
+.reservation .details-inputs input{
+    width: 30%;
+    height: 40px;
+    background-color: #161718;
+    color: white;
+    margin: 10px;
+}
+.reservation .message-input textarea{
+    width: 500px;
+    height: 100px;
+    margin: 10px 0px;
+    background-color: #161718;
+}
+
+.reservation .message-input textarea::placeholder{
+    color: white;
+}
+
+.reservation .contact-form{
+    background-image: url("form-pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.reservation .booking{
+    margin-top: 10px;
+}
+
+.reservation .location{
+    margin-top: 20px;
+}
+
+.strength{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #161718;
+}
+
+.update{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.update .event-row{
+    margin-top: 50px;
+}
+
+.footer{
+    background-image: url("footer-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer ul li{
+    margin-top: 15px;
+}
+
+.footer .email-signup input::placeholder{
+    color: white;
+}
+
+.footer .last-row{
+    margin-top: 50px;
+}
+
+
+/* hover effect section starts  */
+
+
+/* hover effect section ends */
+
+
+@media screen and ( min-width: 320px) and ( max-width: 424px) {
+    header{
+        background-image: url("hero-slider-3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 130vh;
+    }
+    
+    .offcanvas .offcanvas-header{
+        background-color: aliceblue;
+        color: black;
+    }
+
+    .offcanvas{
+        background-color: black;
+    }
+
+    .offcanvas-body{
+        background-color: #161718;
+        color: white;
+    }
+    .banner-slide div{
+        width: 100px;
+        height: 100px;
+        background-color: #E4C590;
+        margin-top: 50px;
+        margin-right: 60px;
+    }
+
+    .banner-slide div p {
+        font-size: 12px;
+    }
+
+    .banner p{
+        font-size: 13px;
+    }
+
+    .story{
+        background-color: #161718;
+        height: auto;
+        padding: 50px 10px;
+    
+    }
+
+    
+    .special-dish{
+        background-color: black;
+        padding: 40px 0px;
+        height: auto;
+    }
+
+    .selection{
+        padding: 10px 0;
+        height: auto;
+        background-color: #161718;
+    }
+
+    .selection .menu-pic img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .selection .price-section p{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .selection .para p{
+        font-size: 8px;
+        /* letter-spacing: 0.3px; */
+    }
+
+    .selection ul li{
+        margin-top: 20px;
+    }
+    /* .selection .price-section .span{
+        margin-left: 5px;
+    } */
+
+
+
+    
+.reservation{
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.reservation .inputs input{
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+}
+.reservation .inputs input::placeholder{
+    color: white;
+
+}
+
+.reservation .details-inputs select{
+    width: 100%;
+    height: 40px;
+    background-color: #161718;
+    margin-top: 10px;
+}
+.reservation .details-inputs select option{
+    background-color: #161718;
+    color: white;
+
+}
+
+.reservation .details-inputs input{
+    width: 100%;
+    height: 30px;
+    background-color: #161718;
+    color: white;
+    margin: 10px;
+}
+.reservation .message-input textarea{
+    width: 100%;
+    height: 60px;
+    margin: 5px 0px;
+    background-color: #161718;
+}
+
+.reservation .message-input textarea::placeholder{
+    color: white;
+}
+
+.reservation .contact-form{
+    background-image: url("form-pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.reservation .booking{
+    margin-top: 10px;
+}
+
+.reservation .location{
+    margin-top: 20px;
+}
+
+.strength{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #161718;
+}
+
+.update{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+}
+
+.update .event-row{
+    margin-top: 25px;
+}
+
+
+.footer{
+    background-image: url("footer-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer ul li{
+    margin-top: 10px;
+}
+
+.footer .email-signup input::placeholder{
+    color: white;
+}
+
+.footer .last-row{
+    margin-top: 30px;
+}
+
+
+}
+
+
+
+@media screen and (min-width:425px) and (max-width: 768px) {
+    header{
+        background-image: url("hero-slider-3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 140vh;
+    }
+    .offcanvas .offcanvas-header{
+        background-color: aliceblue;
+        color: black;
+    }
+
+    .offcanvas{
+        background-color: black;
+    }
+    .banner-slide div{
+        width: 100px;
+        height: 100px;
+        background-color: #E4C590;
+        margin-top: 50px;
+        margin-right: 60px;
+    }
+
+    .banner-slide div p {
+        font-size: 12px;
+    }
+    .banner p{
+        font-size: 16px;
+    }
+    .selection{
+        padding: 10px 0;
+        height: auto;
+        background-color: #161718;
+    }
+
+    .selection .menu-pic img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .selection .price-section p{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .selection .para p{
+        font-size: 8px;
+        /* letter-spacing: 0.3px; */
+    }
+    .selection ul li{
+        margin-top: 30px;
+    }
+
+    reservation{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    
+    .reservation .inputs input{
+        width: 100%;
+        height: 40px;
+        margin: 5px;
+    }
+    .reservation .inputs input::placeholder{
+        color: white;
+    
+    }
+    
+    .reservation .details-inputs select{
+        width: 100%;
+        height: 40px;
+        background-color: #161718;
+        margin-top: 10px;
+    }
+    .reservation .details-inputs select option{
+        background-color: #161718;
+        color: white;
+    
+    }
+    
+    .reservation .details-inputs input{
+        width: 100%;
+        height: 30px;
+        background-color: #161718;
+        color: white;
+        margin: 10px;
+    }
+    .reservation .message-input textarea{
+        width: 100%;
+        height: 60px;
+        margin: 5px 0px;
+        background-color: #161718;
+    }
+    
+    .reservation .message-input textarea::placeholder{
+        color: white;
+    }
+    
+    .reservation .contact-form{
+        background-image: url("form-pattern.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .reservation .booking{
+        margin-top: 10px;
+    }
+    
+    .reservation .location{
+        margin-top: 20px;
+    }
+
+    .strength{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #161718;
+    }
+
+    .update{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: black;
+    }
+    
+    .update .event-row{
+        margin-top: 25px;
+    }
+    
+    .footer{
+        background-image: url("footer-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer ul li{
+        margin-top: 10px;
+    }
+    
+    .footer .email-signup input::placeholder{
+        color: white;
+    }
+    
+    .footer .last-row{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+
+    header .location-section a{
+        font-size: 10px;
+    }
+    header{
+        background-image: url("hero-slider-3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 140vh;
+    }
+
+    .selection{
+        padding: 10px 0;
+        height: auto;
+        background-color: #161718;
+    }
+
+    .selection .menu-pic img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .selection .price-section p{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .selection .para p{
+        font-size: 8px;
+        /* letter-spacing: 0.3px; */
+    }
+
+    .selection ul li{
+        margin-top: 40px;
+    }
+
+    reservation{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    
+    .reservation .inputs input{
+        width: 100%;
+        height: 40px;
+        margin: 5px;
+    }
+    .reservation .inputs input::placeholder{
+        color: white;
+    
+    }
+    
+    .reservation .details-inputs select{
+        width: 100%;
+        height: 40px;
+        background-color: #161718;
+        margin-top: 10px;
+    }
+    .reservation .details-inputs select option{
+        background-color: #161718;
+        color: white;
+    
+    }
+    
+    .reservation .details-inputs input{
+        width: 100%;
+        height: 30px;
+        background-color: #161718;
+        color: white;
+        margin: 10px;
+    }
+    .reservation .message-input textarea{
+        width: 100%;
+        height: 60px;
+        margin: 5px 0px;
+        background-color: #161718;
+    }
+    
+    .reservation .message-input textarea::placeholder{
+        color: white;
+    }
+    
+    .reservation .contact-form{
+        background-image: url("form-pattern.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .reservation .booking{
+        margin-top: 10px;
+    }
+    
+    .reservation .location{
+        margin-top: 20px;
+    }
+    
+    .strength{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #161718;
+    }
+
+    .update{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: black;
+    }
+    
+    .update .event-row{
+        margin-top: 25px;
+    }
+}
